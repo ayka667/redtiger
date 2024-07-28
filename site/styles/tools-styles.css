@@ -1,0 +1,367 @@
+body {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Fira Code', monospace;
+    background-color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-title {
+    font-size: 400%;
+    text-align: center;
+    color: #bd0000;
+    text-shadow: 2px 2px 4px rgba(70, 70, 70, 0.8), 0 0 10px rgba(128, 0, 0, 0.8);
+}
+
+.div-image {
+    text-align: center;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(206, 0, 0, 0.7);
+    animation: scaleImage 5s alternate infinite;
+}
+
+.div-button-learn-more {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20%;
+}
+
+.button-learn-more {
+    font-family: 'Fira Code', monospace;
+    background-color: #bd0000;
+    color: #FFFFFF;
+    padding: 2% 8%;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    transition: background-color 0.6s ease, transform 0.6s ease, color 0.6s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(206, 0, 0, 0.7);
+}
+
+.button-learn-more::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+}
+
+.button-learn-more:hover::before {
+    width: 120%;
+    height: 350%;
+}
+
+.button-learn-more:hover {
+    background-color: #800000;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.outer-box {
+    background-color: #121212;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: calc(50% - 50vw);
+}
+
+.inner-box {
+    padding: 40px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.div-terms-of-use {
+    text-align: left;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 1.2em;
+    max-width: 70%;
+    width: 100%;
+    border: 2px solid #CE0000;
+    box-shadow: 0 0 20px rgba(206, 0, 0, 0.7);
+    animation: moveUpDown 3s linear infinite;
+    transition: transform 0.3s ease;
+}
+
+.h2-title-terms-of-use {
+    color: #CE0000;
+    font-size: 140%;
+}
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.download-box {
+    border: 2px solid #B30000;
+    padding: 2%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(206, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+    width: 48%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.download-box:hover {
+    transform: scale(1.05);
+}
+
+.download-button {
+    font-family: 'Fira Code', monospace;
+    background-color: #bd0000;
+    color: #FFFFFF;
+    padding: 3% 10%;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.6s ease, transform 0.6s ease, color 0.6s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(206, 0, 0, 0.7);
+}
+
+.download-box h3 {
+    text-align: left;
+}
+
+.download-box p {
+    text-align: left;
+}
+
+.download-box p.prix {
+    text-align: center;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+}
+
+.download-button:hover::before {
+    width: 120%;
+    height: 350%;
+}
+
+.download-button:hover {
+    background-color: #800000;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+img.tool {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(206, 0, 0, 0.7);
+}
+
+@keyframes scaleImage {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.6);
+    }
+}
+
+.colored-link {
+    color: #CE0000;
+    text-decoration: none;
+}
+
+.colored-link:hover {
+    transition: 0.3s;
+    color: #ff5757;
+}
+
+.attention-box:hover {
+    transform: scale(1.5);
+}
+
+@keyframes moveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.footer-button {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 6%;
+}
+
+.footer-button .button {
+    font-family: 'Fira Code', monospace;
+    background-color: #bd0000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1% 4%;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    transition: background-color 0.6s ease, transform 0.6s ease, color 0.6s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(206, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 5%;
+    padding-left: 10%;
+    background-color: #161616;
+}
+
+.footer-icons a {
+    text-decoration: none;
+}
+
+p.texte {
+    font-size: 120%;
+    margin-left: 20px;
+}
+
+.footer-icons img {
+    padding-left: 1%;
+    width: 4%;
+    height: 4%;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        font-size: 20px;
+    }
+    @keyframes scaleImage {
+        0% {
+            transform: scale(0.7);
+        }
+        100% {
+            transform: scale(0.9);
+        }
+    }
+    .div-image img {
+        width: 1000px;
+    }
+    .footer-icons img {
+        margin-left: 5%;
+        width: 8%;
+        height: 3%;
+    }
+    p.texte {
+        font-size: 35px;
+    }
+    .h2-title-terms-of-use {
+        font-size: 50px;
+    }
+    .p-description-terms-of-use {
+        font-size: 30px;
+    }
+    .download-section p {
+        font-size: 25px;
+    }
+    .download-section h3 {
+        font-size: 35px;
+    }
+    .download-section h2 {
+        font-size: 40px;
+    }
+    .download-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .download-box {
+        width: 90%;
+        margin-top: 150px;
+    }
+    .inner-box {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-top: 30px;
+    }
+    .header-button {
+        margin-top: 50px;
+        padding-bottom: 30%;
+    }
+    .button {
+        padding: 2% 8%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .h1-title {
+        font-size: 250%;
+    }
+    .div-image img {
+        width: 370px;
+    }
+    .h2-title-terms-of-use {
+        font-size: 30px;
+    }
+    .p-description-terms-of-use {
+        font-size: 20px;
+    }
+    .download-section p {
+        font-size: 15px;
+    }
+    .download-section h3 {
+        font-size: 22px;
+    }
+    .download-section h2 {
+        font-size: 27px;
+    }
+    .download-box {
+        width: 90%;
+        margin-top: 150px;
+    }
+    .footer-icons img {
+        margin-left: 5%;
+        width: 12%;
+    }
+    p.texte {
+        font-size: 20px;
+    }
+}
